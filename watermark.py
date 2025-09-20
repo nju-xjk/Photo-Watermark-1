@@ -45,7 +45,7 @@ class WatermarkTool:
             image_path: 图片文件路径
             
         Returns:
-            格式化的日期字符串，如"2024年01月15日"
+            格式化的日期字符串，如"2024-01-15"
         """
         try:
             with open(image_path, 'rb') as f:
@@ -66,7 +66,7 @@ class WatermarkTool:
                     if ':' in datetime_str:
                         try:
                             dt = datetime.strptime(datetime_str, '%Y:%m:%d %H:%M:%S')
-                            return dt.strftime('%Y年%m月%d日')
+                            return dt.strftime('%Y-%m-%d')
                         except ValueError:
                             continue
             
@@ -74,7 +74,7 @@ class WatermarkTool:
             self.logger.warning(f"未找到EXIF时间信息，使用文件修改时间: {image_path}")
             file_time = os.path.getmtime(image_path)
             dt = datetime.fromtimestamp(file_time)
-            return dt.strftime('%Y年%m月%d日')
+            return dt.strftime('%Y-%m-%d')
             
         except Exception as e:
             self.logger.error(f"提取EXIF信息失败 {image_path}: {e}")

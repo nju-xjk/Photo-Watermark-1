@@ -1,0 +1,10 @@
+2025-09-21 00:45:04,972 - INFO - 找到 2 个图片文件，开始处理...
+2025-09-21 00:45:04,973 - INFO - 处理文件: example.jpg
+2025-09-21 00:45:05,506 - INFO - 成功处理: example.jpg -> example_watermark.jpg
+2025-09-21 00:45:05,506 - INFO - 处理文件: example.jpg
+2025-09-21 00:45:05,888 - INFO - 成功处理: example.jpg -> example_watermark.jpg
+2025-09-21 00:47:10,796 - INFO - 找到 2 个图片文件，开始处理...
+2025-09-21 00:47:10,796 - INFO - 处理文件: example.jpg
+2025-09-21 00:47:11,207 - INFO - 成功处理: example.jpg -> example_watermark.jpg
+2025-09-21 00:47:11,207 - INFO - 处理文件: example.jpg
+2025-09-21 00:47:11,659 - INFO - 成功处理: example.jpg -> example_watermark.jpg
